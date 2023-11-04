@@ -3,13 +3,14 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
-    "start": "next start"
+    "start": "next start",
+    "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@tailwindcss/forms": "^0.5.6",
     "@types/node": "20.5.7",
-    "@vercel/postgres": "^0.5.0",
+    "@vercel/postgres": "^0.5.1",
     "autoprefixer": "10.4.15",
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
@@ -28,7 +29,8 @@
     "dotenv": "^16.3.1",
     "eslint": "^8.52.0",
     "eslint-config-next": "^14.0.0",
-    "prettier": "^3.0.3"
+    "prettier": "^3.0.3",
+    "vercel": "^32.5.0"
   },
   "engines": {
     "node": ">=18"
